@@ -6,12 +6,19 @@
   </title>
 
   <script>
-   Function Laugh(10)
+   function laugh(ha) {
+   var i;
+   var funny = "";
+   for (i = 0; i < 50000; i++){
+    funny += ha;
+   }
+   return funny
+ }
   </script>
 </head>
 <body>
   <script>
-  document.write(Laugh)
+  document.write(laugh("ha"));
   </script>
 </body>
 </html>
