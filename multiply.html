@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Multiply Magic</title>
+  <script>
+    function jul(){
+      var i;
+      var matro="";
+      var val = document.getElementById('inputField').value;
+      for (i = 0; i < 10; i++){
+        matro += val;
+      }
+      document.getElementById('result').innerHTML = matro + <br></br>  ;
+    }
+    </script>
+
+  </head>
+  <body>
+    <h1>Text Multiplication Magic</h1>
+    <p>Write something in the text field to multiply it!</p>
+
+    <input type="text" id="inputField">
+    <button onclick="jul()">Click Me!</button>
+    <p>Here's the Magic:</p>
+
+    <div id="result">
+
+    </div>
+
+    </body>
+
+    </html>
