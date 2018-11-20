@@ -1,36 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Multiply niBBa</title>
+  <title>Multiply Magic</title>
+  <script>
+    function jul(){
+      var i;
+      var matro="";
+      var val = document.getElementById('inputField').value;
+      for (i = 0; i < 10; i++){
+        matro += val + "<p></p>" ;
+      }
+      document.getElementById('result').innerHTML = matro  ;
+    }
+    </script>
 
-<script>
-function multip(kys){
-  var i;
-  var rodu="";
-  var val = document.getElementById('inputField').value;
-  document.getElementById('result').innerHTML = "Hello!"+val;
-  for (i = 0; i < 10; i++){
-    i += rodu;
-  }
-  return rodu
-}
+  </head>
+  <body>
+    <h1>Text Multiplication Magic</h1>
+    <p>Write something in the text field to multiply it!</p>
 
-</script>
+    <input type="text" id="inputField">
+    <button onclick="jul()">Click Me!</button>
+    <p>Here's the Magic:</p>
 
-</head>
+    <div id="result">
 
-<body>
-  <h1>Waddup</h1>
-  <p>Type hello in the text field and see what happens!</p>
+    </div>
 
-  <input type="text" id="inputField">
-  <button onclick="multip(kys)">Click Me!</button>
-  <p>Output:</p>
+    </body>
 
-  <div id="result">
-
-  </div>
-
-  </body>
-
-  </html>
+    </html>
