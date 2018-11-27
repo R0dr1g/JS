@@ -3,15 +3,14 @@
 <head>
   <title>Multiplicator</title>
   <script>
-function jef(){
-  var juan = "";
-  var tuan = "";
-    var val = document.getElementById('inputField').value;
+  <script>
+      function multiplyNumbers(x,y){
+        var val = document.getElementById('inputField').value;
 
-}
-
-
-
+          return x*y;
+      }
+      var z= multiplyNumbers(4,5);
+      document.getElementById('result').innerHTML = z  ;
 
   </script>
   </head>
@@ -21,8 +20,9 @@ function jef(){
   <h2>Write 2 NUMBERS in the text field</h2>
 
 <input type="text" id="inputField">
-<button onclick="jef()">Multiply the numbers !</button>
-<p>This is the result:</p>
+<button onclick="multiplyNumbers(x,y)">Multiply numbers</button>
+<p id="multiplication">Result :</p>
+
 
 
 
